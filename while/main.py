@@ -11,6 +11,7 @@ def unique_koala_facts(input_max):
     i = 0
     while i < 1000 and num_fact < input_max:
         fact = random_koala_fact()
+        i += 1
         if fact in unique_facts_list:
             #already know
             continue
@@ -20,8 +21,7 @@ def unique_koala_facts(input_max):
             num_fact += 1
             #print(f"num_fact= {num_fact} < {input_max}")
             #print(" ")
-        i += 1
-    #print(f"eindtotaal: {num_fact}")
+            #print(f"eindtotaal: {num_fact}")
     return(num_fact)
 
 def num_joey_facts():
